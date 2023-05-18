@@ -9,4 +9,3 @@
   <node pkg="health_monitor" type="health_monitor_node" name="health_monitor_node" output="screen" />
 
 </launch>
-<node name="foxglove_studio" pkg="foxglove_studio" type="foxglove_studio_node" output="log"/>
