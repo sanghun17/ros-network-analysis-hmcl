@@ -28,6 +28,7 @@ int main(int argc, char* argv[])
 
 		// Publish the delay values in the /network_analysis/network_delay topic
 		ros::Publisher pub = n.advertise<network_analysis::NetworkDelay>("network_analysis/network_delay", 10);
+		
 		network_analysis::NetworkDelay msg;
 
 		// delay calculation using ROS action calls

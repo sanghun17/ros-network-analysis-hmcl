@@ -57,7 +57,6 @@ public:
     if(success)
     {
       result_.outp = feedback_.fb;
-      ROS_INFO("ROS Action %s: Succeeded", action_name_.c_str());
       // set the action state to succeeded
       as_.setSucceeded(result_);
     }

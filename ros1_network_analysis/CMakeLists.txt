@@ -8,6 +8,8 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   actionlib
   actionlib_msgs
+  nav_msgs
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -70,6 +72,9 @@ add_executable(network_delay src/network_delay.cpp)
 target_link_libraries(network_delay ${catkin_LIBRARIES})
 add_dependencies(network_delay network_analysis_gencpp network_analysis_EXPORTED_TARGETS)
 
+add_executable(network_delay_convertor src/network_delay_convertor.cpp)
+target_link_libraries(network_delay_convertor ${catkin_LIBRARIES})
+add_dependencies(network_delay_convertor network_analysis_gencpp network_analysis_EXPORTED_TARGETS)
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(network_analysis_node
